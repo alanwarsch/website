@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #fff3e0, #fff8e1);
+    padding: 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #f57c00;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.grade-button {
+    background-color: white;
+    color: #f57c00;
+    border: 2px solid #ffe0b2;
+    padding: 1.5rem 2rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.grade-button:hover {
+    background-color: #fff3e0;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .grade-button {
+        font-size: 1.1rem;
+        padding: 1.25rem 1.5rem;
+    }
+}

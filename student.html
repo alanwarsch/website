@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <link rel="icon" type="image/x-icon" href="./image/logo.jpg">
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التقديم للدراسة</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #fff3e6, #ffe5cc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .buttons-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.action-button {
+    width: 256px;
+    height: 256px;
+    background: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.action-button:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.wallet-icon {
+    color: #f97316;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.graduation-icon {
+    color: #ea580c;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.action-button:hover .wallet-icon,
+.action-button:hover .graduation-icon {
+    transform: scale(1.1);
+}
+
+h2 {
+    margin: 1rem 0;
+    color: #1f2937;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+p {
+    color: #4b5563;
+    font-size: 0.875rem;
+    text-align: center;
+}
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="buttons-container">
+                <a href="pack.html"> <button class="action-button" onclick="handleClick('دفع')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wallet-icon">
+                        <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"></path>
+                        <path d="M3 5v14a2 2 0 0 0 2 2h16v-5"></path>
+                        <path d="M18 12a2 2 0 0 0 0 4h4v-4Z"></path>
+                    </svg>
+                    <h2>دفع المصاريف</h2>
+                    <p>اضغط هنا لدفع المصاريف الدراسية</p>
+                </button></a>
+    
+                <a href="https://calendly.com/anwarschool123/meet-with-me?month=2025-02"> <button class="action-button" onclick="handleClick('تقديم')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="graduation-icon">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                    <h2>التقديم للدراسة</h2>
+                    <p>اضغط هنا للتقديم في المدرسة</p>
+                </button></a>
+            </div>
+        </div>
+        <script>
+            function handleClick(type) {
+    if (type === 'دفع') {
+        alert('سيتم توجيهك إلى صفحة الدفع');
+    } else if (type === 'تقديم') {
+        alert('سيتم توجيهك إلى صفحة التقديم');
+    }
+}
+        </script>
+    </body>
+</html>
