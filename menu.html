@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link rel="icon" type="image/x-icon" href="./image/logo.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>القائمة</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(to bottom, #fff7ed, #ffffff);
+            padding: 3rem 1rem;
+        }
+
+        .container {
+            max-width: 48rem;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1f2937;
+            font-size: 1.875rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+
+        .links-container {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            padding: 1.5rem;
+        }
+
+        .links-grid {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .link-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+
+        .link-item:hover {
+            background-color: #ffedd5;
+        }
+
+        .icon-container {
+            background-color: #fed7aa;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.2s;
+        }
+
+        .link-item:hover .icon-container {
+            background-color: #fdba74;
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            stroke: #ea580c;
+            fill: none;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .link-text {
+            font-size: 1.125rem;
+            font-weight: 500;
+            color: #1f2937;
+        }
+
+        .arrow {
+            margin-right: auto;
+            width: 20px;
+            height: 20px;
+            stroke: #9ca3af;
+            transition: stroke 0.2s;
+        }
+
+        .link-item:hover .arrow {
+            stroke: #ea580c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>روابط مهمة</h1>
+        
+        <div class="links-container">
+            <div class="links-grid">
+                <a href="index.html" class="link-item">
+                    <div class="icon-container">
+                        <svg viewBox="0 0 24 24" class="icon">
+                            <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                        </svg>
+                    </div>
+                    <span class="link-text">الصفحة الرئيسية</span>
+                    <svg viewBox="0 0 24 24" class="arrow">
+                        <path d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+
+                <a href="https://network-18469696.mn.co/sign_up" class="link-item">
+                    <div class="icon-container">
+                        <svg viewBox="0 0 24 24" class="icon">
+                            <path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </div>
+                    <span class="link-text">منتدي الانوار</span>
+                    <svg viewBox="0 0 24 24" class="arrow">
+                        <path d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+
+                <a href="store.html" class="link-item">
+                    <div class="icon-container">
+                        <svg viewBox="0 0 24 24" class="icon">
+                            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <span class="link-text">متجر الانوار</span>
+                    <svg viewBox="0 0 24 24" class="arrow">
+                        <path d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+
+                <a href="direc.html" class="link-item">
+                    <div class="icon-container">
+                        <svg viewBox="0 0 24 24" class="icon">
+                            <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <span class="link-text">نتائج الاختبارات</span>
+                    <svg viewBox="0 0 24 24" class="arrow">
+                        <path d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+
+                <a href="https://alanwar.substack.com/" class="link-item">
+                    <div class="icon-container">
+                        <svg viewBox="0 0 24 24" class="icon">
+                            <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <span class="link-text">مدونة الانوار</span>
+                    <svg viewBox="0 0 24 24" class="arrow">
+                        <path d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+                <!--<a href="anwarschool123@gmail.com" class="link-item">
+                    <div class="icon-container">
+                        <svg viewBox="0 0 24 24" class="icon">
+                            <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <span class="link-text">التواصل معنا</span>
+                    <svg viewBox="0 0 24 24" class="arrow">
+                        <path d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </a>-->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

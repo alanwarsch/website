@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <link rel="icon" type="image/x-icon" href="./image/logo.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الموقع الرسمي لمدرسة الانوار الخاصة</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+        .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+            width: 16px !important;
+            height: 4px !important;
+            border-radius: 5px !important;
+            margin: 0 6px !important;
+        }
+
+        .swiper-pagination {
+            bottom: 2px !important;
+        }
+
+        .swiper-wrapper {
+            height: max-content !important;
+            width: max-content !important;
+            padding-bottom: 64px;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #4F46E5 !important;
+        }
+        
+        .swiper-slide.swiper-slide-active>.slide_active\:border-indigo-600 {
+            --tw-border-opacity: 1;
+            border-color: rgb(79 70 229 / var(--tw-border-opacity));
+        }
+
+        .swiper-slide.swiper-slide-active>.group .slide_active\:text-gray-800 {
+            ---tw-text-opacity: 1;
+            color: rgb(31 41 55 / var(--tw-text-opacity));
+        }
+    </style>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!--massage-->
+    <div class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+        <div class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
+          <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"></div>
+        </div>
+        <div class="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
+          <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"></div>
+        </div>
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+          <p class="text-sm/6 text-gray-900">
+            <strong class="font-semibold">التقديم فتح</strong><svg viewBox="0 0 2 2" class="mx-2 inline size-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>تم فتح التقديم الان لمدارس الانوار الخاصة دفعة 2024 / 2025
+          </p>
+          <a href="student.html" class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">قدم الان <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <div class="flex flex-1 justify-end">
+          <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]">
+            <span class="sr-only">Dismiss</span>
+            <svg class="size-5 text-gray-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+              <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+            </svg>
+          </button>
+        </div>
+      </div>      
+    <div class="min-h-screen bg-gradient-to-br from-purple-50 to-white">
+        <!-- Navigation -->
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                  <a href="menu.html"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-orange-600">
+                        <path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/>
+                        <path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/>
+                        <path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/>
+                    </svg></a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="https://alanwar.substack.com/" class="text-gray-600 hover:text-gray-900">مدونة الانوار</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900">.</a>
+                    <a href="https://network-18469696.mn.co/sign_up" class="text-gray-600 hover:text-gray-900">منتدي الانوار</a>
+                    <a href="store.html" class="text-gray-600 hover:text-gray-900">متجر الانوار</a>
+                    <a href="student.html" class="text-gray-600 hover:text-gray-900">التقديم للدراسة</a>
+                </div>
+                <a href="direc.html" class="bg-orange-600 text-white px-6 py-2 rounded-full hover:bg-orange-700 transition-colors flex items-center">
+                  درجات الطالب
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+                      <path d="M5 12h14"/>
+                      <path d="m12 5 7 7-7 7"/>
+                  </svg>
+              </a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="container mx-auto px-6 pt-20 pb-24">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-8">
+                        مدرسة الانوار حيث يسطع منها الانوار دائما
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-10">
+                        مدرسة الأنوار هي مؤسسة تعليمية متميزة تهدف إلى اكتشاف وتنمية المواهب لدى الطلاب من مختلف الأعمار. تسعى المدرسة إلى خلق بيئة تعليمية مبتكرة تُعزز من قدرات الطلاب الأكاديمية، الإبداعية، والقيادية، لتطوير جيل واعٍ ومبدع قادر على إحداث تغيير إيجابي في مجتمعه.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="student.html" class="bg-orange-600 text-white px-8 py-4 rounded-lg hover:bg-orange-700 transition-colors">
+                            تعلم معنا
+                        </a>
+                        <a href="https://network-18469696.mn.co/sign_up" class="text-gray-600 hover:text-gray-900 px-8 py-4 rounded-lg border border-gray-300 hover:border-gray-400 transition-colors flex items-center">
+                            انضم الي منتدي الانوار
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+                                <path d="M5 12h14"/>
+                                <path d="m12 5 7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Image Grid -->
+                <div class="relative grid grid-cols-2 gap-4 image-grid">
+                    <div class="space-y-4">
+                        <img
+                            src="https://images.unsplash.com/photo-1531498860502-7c67cf02f657?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Team meeting"
+                            class="rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+                        />
+                        <img
+                            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="People working"
+                            class="rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+                        />
+                    </div>
+                    <div class="space-y-4 mt-8">
+                        <img
+                            src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Woman working"
+                            class="rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+                        />
+                        <img
+                            src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Office space"
+                            class="rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-white py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <h2 class="text-center text-lg/8 font-semibold text-gray-900">مدرستنا موثوقة من افضل الهيئات التعليمية</h2>
+          <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+            <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://upload.wikimedia.org/wikipedia/ar/8/81/Ministry_of_Education_%28Egypt%29_logo_%28wikiar%29.png" alt="Transistor" width="300" height="300">
+            <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://gate.ahram.org.eg/Media/News/2024/6/23/19_2024-638547436039991409-999.jpg" alt="Reform" width="158" height="48">
+            <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://engclub12.github.io/engclub/assets/images/logos/logo.png" alt="Tuple" width="158" height="48">
+            <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="https://upload.wikimedia.org/wikipedia/ar/archive/f/f9/20231126120517%21%D9%88%D8%B2%D8%A7%D8%B1%D8%A9_%D8%A7%D9%84%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%D8%A7%D8%AA_%D9%88%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A7_%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.png" alt="SavvyCal" width="158" height="48">
+            <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="https://mma.prnewswire.com/media/1732894/Udacity_Logo.jpg?p=twitter" alt="Statamic" width="158" height="48">
+          </div>
+        </div>
+      </div> 
+   <!--About us-->
+   <section class="py-24 relative xl:mr-0 lg:mr-5 mr-0">
+    <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
+        <div class="w-full justify-start items-center xl:gap-12 gap-10 grid lg:grid-cols-2 grid-cols-1">
+            <div class="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
+                <div class="w-full flex-col justify-center items-start gap-8 flex">
+                    <div class="flex-col justify-start lg:items-start items-center gap-4 flex">
+                        <h6 class="text-gray-400 text-base font-normal leading-relaxed">من نحن؟</h6>
+                        <div class="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
+                            <h2
+                                class="text-orange-500 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
+                                دعونا نروي قصة نجحنا.</h2>
+                            <p
+                                class="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
+                                نحن مدارس الانوار الخاصة. نحن موجودون منذ سنة 2000 م. قمنا باخراج اجيال من الطلبه المتفوقين لكي يغيروا العالم و يروا قصتنا. نحن نعمل دائما لمصلحة الطالب و ولي الامر اولا.</p>
+                        </div>
+                    </div>
+                    <div class="w-full flex-col justify-center items-start gap-6 flex">
+                        <div class="w-full justify-start items-center gap-8 grid md:grid-cols-2 grid-cols-1">
+                            <div
+                                class="w-full h-full p-3.5 rounded-xl border border-gray-200 hover:border-gray-400 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex">
+                                <h4 class="text-gray-900 text-2xl font-bold font-manrope leading-9">25+ سنة</h4>
+                                <p class="text-gray-500 text-base font-normal leading-relaxed">من العمل بشغف و مجهود جبار لمصلحة الطالب</p>
+                            </div>
+                            <div
+                                class="w-full h-full p-3.5 rounded-xl border border-gray-200 hover:border-gray-400 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex">
+                                <h4 class="text-gray-900 text-2xl font-bold font-manrope leading-9">600+ طالب/ة
+                                </h4>
+                                <p class="text-gray-500 text-base font-normal leading-relaxed">
+                                    مجتمع من افضل الطلاب يساعدون علي تقوية شخصية ابنك.</p>
+                            </div>
+                        </div>
+                        <div class="w-full h-full justify-start items-center gap-8 grid md:grid-cols-2 grid-cols-1">
+                            <div
+                                class="w-full p-3.5 rounded-xl border border-gray-200 hover:border-gray-400 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex">
+                                <h4 class="text-gray-900 text-2xl font-bold font-manrope leading-9">100+ مدرس خبير</h4>
+                                <p class="text-gray-500 text-base font-normal leading-relaxed">نحرص دائما علي اختيار افضل المدرسين لرحلة ابنك التعليمية.
+                                    </p>
+                            </div>
+                            <div
+                                class="w-full h-full p-3.5 rounded-xl border border-gray-200 hover:border-gray-400 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex">
+                                <h4 class="text-gray-900 text-2xl font-bold font-manrope leading-9">عربي / لغات 
+                                    </h4>
+                                <p class="text-gray-500 text-base font-normal leading-relaxed">نوفر في مدرستنا امكانية تدريس مواد عربي و لغات.
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://www.facebook.com/alanwaarschools/videos/906003863427517" target="_blank">
+                <button
+                    class="sm:w-fit w-full group px-3.5 py-2 bg-orange-50 hover:bg-orange-100 rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] transition-all duration-700 ease-in-out justify-center items-center flex">
+                    <span
+                        class="px-1.5 text-orange-600 text-sm font-medium leading-6 group-hover:-translate-x-0.5 transition-all duration-700 ease-in-out">شاهد قصتنا!
+                        </span>
+                    <svg class="group-hover:translate-x-0.5 transition-all duration-700 ease-in-out"
+                        xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M6.75265 4.49658L11.2528 8.99677L6.75 13.4996" stroke="orange" stroke-width="1.6"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button></a>
+            </div>
+            <div class="w-full lg:justify-start justify-center items-start flex">
+                <div
+                    class="sm:w-[564px] w-full sm:h-[646px] h-full sm:bg-gray-100 rounded-3xl sm:border border-gray-200 relative">
+                    <img class="sm:mt-5 sm:ml-5 w-full h-full rounded-3xl object-cover"
+                        src="https://pagedone.io/asset/uploads/1717742431.png" alt="about Us image" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Book Store-->
+<section class="py-24 ">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="font-manrope text-4xl font-bold text-gray-900 text-center mb-14">شراء كتب دراسية.</h2>
+      <div class="flex justify-center mb-14 gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8">
+         <div class="group cursor-pointer w-full max-lg:max-w-xl lg:w-1/3 border border-gray-300 rounded-2xl p-5 transition-all duration-300 hover:border-orange-600">
+          <div class="flex items-center mb-6">
+              <img src="./image/pre1.webp" alt="Harsh image" class="rounded-lg w-full object-cover">
+          </div>
+          <a href="store.html"><div class="block">
+              <h4 class="text-gray-900 font-medium leading-8 mb-9">كتب الصفوف الابتدائية (عربي / لغات)</h4>
+              <div class="flex items-center justify-between  font-medium">
+                  <h6 class="text-sm text-gray-500">متجر الانوار</h6>
+                  <span class="text-sm text-orange-600">شراء الأن</span>
+              </div>
+          </div>
+         </div>
+         <div class="group cursor-pointer w-full max-lg:max-w-xl lg:w-1/3 border border-gray-300 rounded-2xl p-5 transition-all duration-300 hover:border-orange-600">
+          <div class="flex items-center mb-6">
+              <img src="./image/pre2.webp" alt="John image" class="rounded-lg w-full object-cover">
+          </div></a>
+          <a href="store.html"><div class="block">
+              <h4 class="text-gray-900 font-medium leading-8 mb-9">كتب الصفوف الاعدادية (عربي / لغات)</h4>
+              <div class="flex items-center justify-between  font-medium">
+                  <h6 class="text-sm text-gray-500">متجر الانوار</h6>
+                  <span class="text-sm text-orange-600">شراء الأن</span>
+              </div>
+          </div>
+         </div>
+         <div class="group cursor-pointer w-full max-lg:max-w-xl lg:w-1/3 border border-gray-300 rounded-2xl p-5 transition-all duration-300 hover:border-orange-600">
+          <div class="flex items-center mb-6">
+              <img src="./image/pre3.webp" alt="Alexa image" class="rounded-lg w-full object-cover">
+          </div></a>
+          <a href="store.html"><div class="block">
+              <h4 class="text-gray-900 font-medium leading-8 mb-9">بوكلت الدراسية و كتب المستوي</h4>
+              <div class="flex items-center justify-between  font-medium">
+                  <h6 class="text-sm text-gray-500">متجر الانوار</h6>
+                  <span class="text-sm text-orange-600">شراء الان</span>
+              </div>
+          </div>
+         </div>
+      </div>
+      <a href="store.html" class="cursor-pointer border border-gray-300 shadow-sm rounded-full py-3.5 px-7 w-52 flex justify-center items-center text-gray-900 font-semibold mx-auto transition-all duration-300 hover:bg-gray-100">متجر الانوار</a>
+    </div></a>
+</section>
+<!--Comment--> 
+<div class="my-6 font-[sans-serif] max-w-6xl mx-auto">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-800">بعض التقيمات لمدرستنا</h2>
+      <p class="text-sm mt-6 leading-relaxed text-gray-500">نحن نحرص دائما في مدارس الانوار الخاصة علي الاهتمام بي اراء و تعليقات اولياء الأمور و الطلاب لتحسين مدرستنا. نعرض لكي الان بعض التقيمات.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-lg:gap-12 max-md:justify-center text-center max-lg:max-w-3xl max-md:max-w-lg mx-auto mt-16">
+      <div>
+        <div class="flex flex-col items-center">
+          <img src="https://readymadeui.com/team-2.webp" class="w-24 h-24 rounded-full border-2 border-orange-600" />
+          <div class="mt-6">
+            <h4 class="text-sm font-bold text-gray-800">Muhammed AbdAllah</h4>
+          </div>
+        </div>
+
+        <div class="flex justify-center space-x-1 mt-2.5">
+          <svg class="w-4 h-4 fill-orange-600" viewBox="0 0 14 13" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+          </svg>
+          <svg class="w-4 h-4 fill-orange-600" viewBox="0 0 14 13" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+          </svg>
+          <svg class="w-4 h-4 fill-orange-600" viewBox="0 0 14 13" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+          </svg>
+          <svg class="w-4 fill-[#CED5D8]" viewBox="0 0 14 13" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+          </svg>
+          <svg class="w-4 fill-[#CED5D8]" viewBox="0 0 14 13" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+          </svg>
+        </div>
+
+        <div class="mt-4">
+          <p class="text-sm leading-relaxed text-gray-800">هذه المدرسة واحدة من افضل المراحل في حياتي ♥️</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="flex flex-col items-center">
+          <img src="https://scontent.fcai19-5.fna.fbcdn.net/v/t39.30808-6/453186674_1649079672556489_8342243286093629570_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=SLOtHwn_RbAQ7kNvgGeSWSc&_nc_oc=AdhzI4WkfLsP_srT0KhjhcBGqVHZZjfkTdxwNTdNNhOTdEQKNLx_2OHWlALWcTyCM_s&_nc_zt=23&_nc_ht=scontent.fcai19-5.fna&_nc_gid=AwJSIjfiHnsNVBf-B3g8DUG&oh=00_AYD_WgZ9E4M-5xJZiiHR965-Bf2miK_iqxYjiUrh5t-5Uw&oe=67BED70A" class="w-24 h-24 rounded-full border-2 border-orange-600" />
+          <div class="mt-6">
+            <h4 class="text-sm font-bold text-gray-800">Kyrlos Adel</h4>
+          </div>
+        </div>
+
+        <div class="flex justify-center space-x-1 mt-2.5">
+          <svg class="w-4 h-4 fill-orange-600" viewBox="0 0 14 13" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+          </svg>
+          <svg class="w-4 h-4 fill-orange-600" viewBox="0 0 14 13" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+          </svg>
+          <svg class="w-4 h-4 fill-orange-600" viewBox="0 0 14 13" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+          </svg>
+          <svg class="w-4 h-4 fill-orange-600" viewBox="0 0 14 13" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+          </svg>
+          <svg class="w-4 h-4 fill-orange-600" viewBox="0 0 14 13" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+          </svg>
+        </div>
+
+        <div class="mt-4">
+          <p class="text-sm leading-relaxed text-gray-800">انا فخور جدا! لانتمائي الي مدارس الانوار حقيقي مدرسة رائعة تهتم بي مصلحة الطالب اولا. حقيقي انا فخور بهذه المدرسة</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="flex flex-col items-center">
+          <img src="https://readymadeui.com/team-4.webp" class="w-24 h-24 rounded-full border-2 border-orange-600" />
+          <div class="mt-6">
+            <h4 class="text-sm font-bold text-gray-800">Sali Ahmed</h4>
+          </div>
+        </div>
+
+        <div class="flex justify-center space-x-1 mt-2.5">
+          <svg class="w-4 h-4 fill-orange-600" viewBox="0 0 14 13" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+          </svg>
+          <svg class="w-4 h-4 fill-orange-600" viewBox="0 0 14 13" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+          </svg>
+          <svg class="w-4 h-4 fill-orange-600" viewBox="0 0 14 13" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+          </svg>
+          <svg class="w-4 h-4 fill-orange-600" viewBox="0 0 14 13" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+          </svg>
+          <svg class="w-4 fill-[#CED5D8]" viewBox="0 0 14 13" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+          </svg>
+        </div>
+
+        <div class="mt-4">
+          <p class="text-sm leading-relaxed text-gray-800">بجد هي مدرسة جميلة. و حقيقي انا حسه ان ادخال اولادي مدرسة الانوار و احد من افضل القرارات</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--Blog-->
+  <div class="min-h-screen bg-white-100 px-4 py-16">
+    <div class="mx-auto max-w-7xl">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+          بعض مقالتنا.
+        </h2>
+        <p class="mt-4 text-lg leading-8 text-gray-600">
+          شاهد بعض مقالتنا التي اخترناها لك بكل عناية
+        </p>
+      </div>
+      
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Blog Card 1 -->
+        <div class="group relative overflow-hidden rounded-2xl bg-white shadow-xl transition-all hover:shadow-2xl">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img
+              src="./image/blog1.webp"
+              alt="تطوير المناهج المصرية وتأثيرها على مستوى الطلاب"
+              class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent">
+            <div class="absolute bottom-0 p-6 text-white">
+              <div class="mb-2 flex items-center gap-2 text-sm">
+                <div class="flex items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <span>Mar 16, 2020</span>
+                </div>
+                <span>•</span>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="./image/logo.jpg"
+                    alt="Michael Foster"
+                    class="h-6 w-6 rounded-full border border-white/20"
+                  />
+                  <span>مدارس الانوار</span>
+                </div>
+              </div>
+              <a href="https://alanwar.substack.com/p/a3f"><h3 class="text-xl font-semibold leading-tight">تطوير المناهج المصرية وتأثيرها على مستوى الطلاب</h3></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 2 -->
+        <div class="group relative overflow-hidden rounded-2xl bg-white shadow-xl transition-all hover:shadow-2xl">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img
+              src="./image/blog2.webp"
+              alt="تطوير المناهج المصرية وتأثيرها على مستوى الطلاب"
+              class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent">
+            <div class="absolute bottom-0 p-6 text-white">
+              <div class="mb-2 flex items-center gap-2 text-sm">
+                <div class="flex items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <span>Mar 10, 2020</span>
+                </div>
+                <span>•</span>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="./image/logo.jpg"
+                    alt="Lindsay Walton"
+                    class="h-6 w-6 rounded-full border border-white/20"
+                  />
+                  <span>مدارس الانوار</span>
+                </div>
+              </div>
+              <a href="https://alanwar.substack.com/p/c0c"><h3 class="text-xl font-semibold leading-tight">نظام التقييم الجديد في مصر: هل هو أكثر فعالية؟</h3></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 3 -->
+        <div class="group relative overflow-hidden rounded-2xl bg-white shadow-xl transition-all hover:shadow-2xl">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img
+              src="./image/blog3.webp"
+              alt="Improve your customer experience"
+              class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent">
+            <div class="absolute bottom-0 p-6 text-white">
+              <div class="mb-2 flex items-center gap-2 text-sm">
+                <div class="flex items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <span>Feb 12, 2020</span>
+                </div>
+                <span>•</span>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="./image/logo.jpg"
+                    alt="Tom Cook"
+                    class="h-6 w-6 rounded-full border border-white/20"
+                  />
+                  <span>مدارس الانوار</span>
+                </div>
+              </div>
+              <a href="https://alanwar.substack.com/p/ec9"><h3 class="text-xl font-semibold leading-tight">التكنولوجيا في التعليم المصري: الفرص والتحديات</h3></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section>
+      <a href="https://alanwar.substack.com/" class="cursor-pointer border border-gray-300 shadow-sm rounded-full py-3.5 px-7 w-52 flex justify-center items-center text-gray-900 font-semibold mx-auto transition-all duration-300 hover:bg-gray-100">مدونة الانوار</a>
+    </section>
+  </div>
+  
+  <!--Contact us-->
+  
+<!--Footer-->
+
+
+<footer class="bg-white rounded-lg shadow-sm dark:bg-white-900 m-4">
+  <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <a href="#" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+              <img src="https://scontent.fcai19-5.fna.fbcdn.net/v/t39.30808-6/243906651_4155622737882298_8676572258754031259_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=S3JnmDJbxaQQ7kNvgHhYOYa&_nc_oc=AdhlUAc2P1_0tGVcJ8E5MIH2py9_jxyklKVV-2eRMbm-vyAo_RXCMbvymypRxVX2nxE&_nc_zt=23&_nc_ht=scontent.fcai19-5.fna&_nc_gid=AbIMmVm23p_ueUkX8cO0cqI&oh=00_AYDYcPbM4v0F0qRJ87dvLp3ZlFfiJptL6lip32isRShzYA&oe=67BEC137" class="h-8" alt="Flowbite Logo" />
+              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-black">مدرسة الأنوار الخاصة</span>
+          </a>
+          <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-black">
+              <li>
+                  <a href="#" class="hover:underline me-4 md:me-6">About</a>
+              </li>
+              <li>
+                  <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+              </li>
+              <li>
+                  <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+              </li>
+              <li>
+                  <a href="#" class="hover:underline">Contact</a>
+              </li>
+          </ul>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-black lg:my-8" />
+      <span class="block text-sm text-gray-500 sm:text-center dark:text-black">© 2025 <a href="https://www.facebook.com/kyrlos1/" class="hover:underline">صنع بواسطة كيرلس عادل</a>.جميع الحقوق محفوظة لمدرسة الانوار..</span>
+  </div>
+</footer>
+<!--email-->
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/67ba3cda01386b191b1862c0/1iknnrdfv';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+</body>
+</html>
