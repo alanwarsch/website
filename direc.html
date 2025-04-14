@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استعلام عن درجات الطالب</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff3e0;
+            text-align: center;
+            padding: 20px;
+        }
+        h2 {
+            color: #ff6f00;
+        }
+        input {
+            padding: 10px;
+            width: 200px;
+            border: 2px solid #ff6f00;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #ff6f00;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e65100;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 15px;
+            border: 2px solid #ff6f00;
+            border-radius: 5px;
+            background-color: #fff;
+            display: inline-block;
+            text-align: left;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #ff6f00;
+            padding: 10px;
+            text-align: right;
+        }
+        th {
+            background-color: #ff6f00;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>البحث عن الطالب</h2>
+    <input type="text" id="searchInput" placeholder="أدخل رقم الجلوس">
+    <button onclick="searchStudent()">بحث</button>
+    <h3>النتيجة:</h3>
+    <div id="result"></div>
+
+    <script>
+        async function searchStudent() {
+            const seatNumber = document.getElementById('searchInput').value.trim();
+            const resultDiv = document.getElementById('result');
+            const apiURL = `https://script.google.com/macros/s/AKfycbx6gVawZoK5R_L0jDnkWp5JNMgV8RmCEQm_HT2AWJoe-9lp-PnXcHGqTVH1CRLUvQ7W/exec?seat=${seatNumber}`;
+    
+            try {
+                const response = await fetch(apiURL);
+                const student = await response.json();
+    
+                if (student.error) {
+                    resultDiv.innerHTML = '<p style="color: red;">لم يتم العثور على الطالب.</p>';
+                } else {
+                    let table = `<table>`;
+                    Object.keys(student).forEach(key => {
+                        table += `<tr><th>${key}</th><td>${student[key]}</td></tr>`;
+                    });
+                    table += `</table>`;
+                    resultDiv.innerHTML = table;
+                }
+            } catch (error) {
+                resultDiv.innerHTML = '<p style="color: red;">حدث خطأ أثناء الاتصال.</p>';
+            }
+        }
+    </script>    
+</body>
+</html>
